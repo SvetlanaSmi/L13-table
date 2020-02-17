@@ -1,0 +1,123 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+    }   
+    * {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    }
+
+table {
+        margin: 20px auto;
+        border-spacing: 20px 0.1px;
+} 
+td, th {
+    border-left: 1px solid rgb(190, 185, 185);
+    border-top: 1px solid rgba(190, 185, 185, 0.212);
+    border-right: 1px solid rgb(190, 185, 185);
+    border-bottom: 1px solid rgba(190, 185, 185, 0.212);
+    min-width: 70px;
+    width: 200px;
+    padding: 5px;
+    border-width: 0.1px 1px;
+}
+th {
+        background-color: rgb(55, 174, 243);
+        font-size: 1.2em;
+        color: white;
+        height: 55px;
+        vertical-align: middle;
+        
+}
+td {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.719);
+    text-align: center;
+    letter-spacing: 0.05em;
+    height: 36px;
+}
+span {
+    color:rgb(55, 174, 243);
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+}
+tr:nth-child(4), tr:nth-child(5) {
+    background-color: rgb(245, 241, 241);
+    font-weight: 700;
+}
+tr:last-child {
+    height: 54px;
+}
+input {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(55, 174, 243);
+    border: 1px groove rgba(55, 174, 243, 0.185);;
+    padding: 7px;
+    border-radius: 3px;
+    letter-spacing: 0.1em;
+}
+input:hover {
+    cursor: pointer;
+}
+
+
+.all {
+    display: table;
+    margin: 20px auto;
+    border: none;
+    /* width: 200px; */
+    height: 340px;
+    border-spacing: 20px;
+}
+
+.all div {
+    display: table-cell;
+    border: 1px solid rgb(196, 189, 189);
+    width: 200px;
+    min-width: 70px;
+    border-spacing: 0;   
+}
+.all div>div {
+    display: table;
+    text-align: center;
+    vertical-align: middle;
+    border-collapse: collapse;
+    border: 0.1px solid rgba(226, 217, 217, 0.459);
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    color: rgba(102, 100, 100, 0.89);
+    height: 36px;
+    
+}
+
+.all div>div:first-child {
+    display: table-cell;
+    background-color: rgb(245, 203, 67);
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    height: 55px;
+    vertical-align: middle;  
+}
+
+.all div>div:last-child {
+    display: table-cell;
+    height: 54px;
+    vertical-align: middle;
+}
+
+.amount {
+    color: rgb(245, 203, 67);
+}
+
+.all div>div:nth-child(4), .all div>div:nth-child(5) {
+    background-color: rgb(245, 241, 241);
+    font-weight: 700;
+}
