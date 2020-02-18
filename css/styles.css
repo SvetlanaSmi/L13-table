@@ -14,14 +14,10 @@ table {
         border-spacing: 20px 0.1px;
 } 
 td, th {
-    border-left: 1px solid rgb(190, 185, 185);
-    border-top: 1px solid rgba(190, 185, 185, 0.212);
-    border-right: 1px solid rgb(190, 185, 185);
-    border-bottom: 1px solid rgba(190, 185, 185, 0.212);
     min-width: 70px;
     width: 200px;
     padding: 5px;
-    border-width: 0.1px 1px;
+    border-width: 1px;
 }
 th {
         background-color: rgb(55, 174, 243);
@@ -29,7 +25,10 @@ th {
         color: white;
         height: 55px;
         vertical-align: middle;
-        
+        border-left: 1px solid rgb(190, 185, 185);
+        border-top: 1px solid rgb(190, 185, 185);
+        border-right: 1px solid rgb(190, 185, 185);
+        border-bottom: 1px solid rgba(190, 185, 185, 0.212);
 }
 td {
     font-size: 12px;
@@ -37,7 +36,15 @@ td {
     text-align: center;
     letter-spacing: 0.05em;
     height: 36px;
+    border-left: 1px solid rgb(190, 185, 185);
+    border-top: rgba(190, 185, 185, 0.212);
+    border-right: 1px solid rgb(190, 185, 185);
+    border-bottom: 1px solid rgba(190, 185, 185, 0.212);   
 }
+tr:nth-child(8) td {
+    border-bottom: 1px solid rgb(190, 185, 185);
+}
+
 span {
     color:rgb(55, 174, 243);
     font-size: 35px;
@@ -69,19 +76,22 @@ input:hover {
 
 .all {
     display: table;
-    margin: 20px auto;
+    margin: 0px auto;
     border: none;
-    /* width: 200px; */
+    /* width: 300px; */
+    /* min-width: ; */
     height: 340px;
     border-spacing: 20px;
 }
+
 
 .all div {
     display: table-cell;
     border: 1px solid rgb(196, 189, 189);
     width: 200px;
     min-width: 70px;
-    border-spacing: 0;   
+    border-spacing: 0;
+       
 }
 .all div>div {
     display: table;
@@ -89,11 +99,10 @@ input:hover {
     vertical-align: middle;
     border-collapse: collapse;
     border: 0.1px solid rgba(226, 217, 217, 0.459);
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 0.1em;
     color: rgba(102, 100, 100, 0.89);
-    height: 36px;
-    
+    height: 36px;    
 }
 
 .all div>div:first-child {
@@ -107,12 +116,6 @@ input:hover {
     vertical-align: middle;  
 }
 
-.all div>div:last-child {
-    display: table-cell;
-    height: 54px;
-    vertical-align: middle;
-}
-
 .amount {
     color: rgb(245, 203, 67);
 }
@@ -120,4 +123,14 @@ input:hover {
 .all div>div:nth-child(4), .all div>div:nth-child(5) {
     background-color: rgb(245, 241, 241);
     font-weight: 700;
+}
+.all div>div:nth-child(n+3) {
+    display: table;
+    line-height: 30px;
+    vertical-align: middle;
+}
+.all div>div:last-child {
+    display: table-cell;
+    height: 54px;
+    vertical-align: middle;
 }
