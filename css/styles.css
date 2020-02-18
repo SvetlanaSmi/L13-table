@@ -78,14 +78,12 @@ input:hover {
     display: table;
     margin: 0px auto;
     border: none;
-    /* width: 300px; */
-    /* min-width: ; */
     height: 340px;
     border-spacing: 20px;
 }
 
 
-.all div {
+.all>div {
     display: table-cell;
     border: 1px solid rgb(196, 189, 189);
     width: 200px;
@@ -94,9 +92,7 @@ input:hover {
        
 }
 .all div>div {
-    display: table;
     text-align: center;
-    vertical-align: middle;
     border-collapse: collapse;
     border: 0.1px solid rgba(226, 217, 217, 0.459);
     font-size: 12px;
@@ -106,31 +102,29 @@ input:hover {
 }
 
 .all div>div:first-child {
-    display: table-cell;
     background-color: rgb(245, 203, 67);
     font-size: 1.2em;
     text-transform: uppercase;
     font-weight: 700;
     color: white;
     height: 55px;
-    vertical-align: middle;  
+    padding-top: 15px;
 }
 
 .amount {
     color: rgb(245, 203, 67);
 }
-
+.all div>div:nth-child(2) {
+    height: 50px;
+    padding-top: 5px;
+}
 .all div>div:nth-child(4), .all div>div:nth-child(5) {
     background-color: rgb(245, 241, 241);
     font-weight: 700;
 }
 .all div>div:nth-child(n+3) {
-    display: table;
-    line-height: 30px;
-    vertical-align: middle;
+    padding-top: 10px;
 }
 .all div>div:last-child {
-    display: table-cell;
     height: 54px;
-    vertical-align: middle;
 }
